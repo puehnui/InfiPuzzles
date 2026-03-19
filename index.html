@@ -115,8 +115,19 @@
   </style>
 </head>
 <body>
-
-  <h1>מאגר שאלות לפי נושאים</h1>
+  <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <h1>מאגר שאלות לפי נושאים</h1>
+    <div class="question-text">
+      תזכורת:
+    </div>
+    <img src="images/main.jpeg" alt="log=ln" width="300">
+    <p style="font-size: 16px; color: #7c7575;">
+      קרדיט תמונה: בועז צבאן
+    </p>
+    <div class="question-text">
+      log=ln!!!
+    </div>
+  </div>
 
   <!-- נושא 1 -->
   <section class="lecture">
@@ -128,7 +139,9 @@
       <div class="question-text">
         מה מייצג הגרף שבתמונה?
       </div>
-
+      <p style="font-size: 16px; color: #7c7575;">
+        קרדיט: אביחי גורפינקל
+      </p>
       <img src="images/lecture1-question1.jpeg" alt="שאלה 1 נושא 1">
 
       <div class="buttons">
@@ -147,6 +160,62 @@
         <img class="answer-image" src="images/lecture1-answer1.png" alt="תשובה לשאלה 1 נושא 1">
       </div>
     </div>
+
+    <div class="question-card">
+      <h3>שאלה 2</h3>
+
+      <div class="question-text">
+        מה מייצגת התמונה?
+      </div>
+      <p style="font-size: 16px; color: #7c7575;">
+        קרדיט: בועז צבאן
+      </p>
+      <img src="images/lecture1-question2.jpeg" alt="שאלה 2 נושא 1">
+
+      <div class="buttons">
+        <button class="hint-btn" onclick="toggleBox('hint-l1-q2')">הצג רמז</button>
+        <button class="answer-btn" onclick="toggleBox('answer-l1-q2')">הצג תשובה</button>
+      </div>
+
+      <div id="hint-l1-q2" class="hint">
+        רמז: איזו פונקציה היא לא רק מחזורית, אלא גם כשגוזרים אותה היא מחזורית?
+      </div>
+
+      <div id="answer-l1-q2" class="answer">
+        <div class="answer-text">
+          תשובה: משפחת הפונקציות sin,cos,-sin,-cos
+        </div>
+        <img class="answer-image" src="images/lecture1-answer2.png" alt="תשובה לשאלה 2 נושא 1">
+      </div>
+    </div>
+
+    <div class="question-card">
+      <h3>שאלה 3</h3>
+
+      <div class="question-text">
+        מה מייצגים כדורי השלג?
+      </div>
+      <p style="font-size: 16px; color: #7c7575;">
+        קרדיט: בועז צבאן
+      </p>
+      <img src="images/lecture1-question3.jpeg" alt="שאלה 3 נושא 1">
+
+      <div class="buttons">
+        <button class="hint-btn" onclick="toggleBox('hint-l1-q3')">הצג רמז</button>
+        <button class="answer-btn" onclick="toggleBox('answer-l1-q3')">הצג תשובה</button>
+      </div>
+
+      <div id="hint-l1-q3" class="hint">
+        רמז: אלה המקדמים של פולינום טיילור. למה הם קטנים?
+      </div>
+
+      <div id="answer-l1-q3" class="answer">
+        <div class="answer-text">
+          תשובה: אלה המקדמים של פולינום טיילור. כאשר איקס מתקרב לנקודה מאד, התרומה של המונומים הראשונים גדולה יותר משל המונומים שמופיעים לאחר מכן (בהנחה שהם לא 0).
+        </div>
+        <img class="answer-image" src="images/lecture1-answer3.png" alt="תשובה לשאלה 3 נושא 1">
+      </div>
+    </div>
   </section>
 
   <!-- נושא 2 -->
@@ -159,6 +228,10 @@
       <div class="question-text">
         איזה רעיון מרכזי מודגם בתמונה?
       </div>
+
+      <p style="font-size: 16px; color: #7c7575;">
+        קרדיט: אביחי גורפינקל
+      </p>
 
       <img src="images/lecture2-question1.jpeg" alt="שאלה 1 נושא 2">
 
@@ -185,7 +258,9 @@
       <div class="question-text">
         למה התמונה מתקשרת, ומה חסר בה?
       </div>
-
+      <p style="font-size: 16px; color: #7c7575;">
+        קרדיט: אביחי גורפינקל
+      </p>
       <img src="images/lecture2-question2.jpeg" alt="שאלה 2 נושא 2">
 
       <div class="buttons">
@@ -271,7 +346,9 @@
       <div class="question-text">
         איזה רעיון מרכזי מודגם בתמונה?
       </div>
-
+      <p style="font-size: 16px; color: #7c7575;">
+        קרדיט: אביחי גורפינקל
+      </p>
       <img src="images/lecture2-question5.jpeg" alt="שאלה 5 נושא 2">
 
       <div class="buttons">
@@ -301,7 +378,9 @@
       <div class="question-text">
         לאיזה משפט התמונה רומזת?
       </div>
-
+      <p style="font-size: 16px; color: #7c7575;">
+        קרדיט: אביחי גורפינקל
+      </p>
       <img src="images/lecture3-question1.jpeg" alt="שאלה 1 נושא 3">
 
       <div class="buttons">
