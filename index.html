@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>שאלות לפי הרצאה</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      text-align: right;
+      margin: 0;
+      padding: 20px;
+      background: #f7f7f7;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .lecture {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .question-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 15px;
+      background: #fafafa;
+    }
+
+    .question-text {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .question-card img,
+    .answer-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .hint-btn {
+      background: #ffd966;
+    }
+
+    .answer-btn {
+      background: #93c47d;
+    }
+
+    .hint, .answer {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .hint {
+      background: #fff3cd;
+    }
+
+    .answer {
+      background: #d9ead3;
+    }
+
+    .answer-text {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .lecture {
+        padding: 15px;
+      }
+
+      .question-text {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 13px;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>מאגר שאלות לפי נושאים</h1>
+
+  <!-- נושא 1 -->
+  <section class="lecture">
+    <h2>נושא 1 - קירוב פונקציות לפולינומים</h2>
+
+    <div class="question-card">
+      <h3>שאלה 1</h3>
+
+      <div class="question-text">
+        מה מייצג הגרף שבתמונה?
+      </div>
+
+      <img src="images/lecture1-question1.jpeg" alt="שאלה 1 הרצאה 1">
+
+      <div class="buttons">
+        <button class="hint-btn" onclick="toggleBox('hint-l1-q1')">הצג רמז</button>
+        <button class="answer-btn" onclick="toggleBox('answer-l1-q1')">הצג תשובה</button>
+      </div>
+
+      <div id="hint-l1-q1" class="hint">
+        רמז: מה קורה כשגוזרים פולינום שוב ושוב?
+      </div>
+
+      <div id="answer-l1-q1" class="answer">
+        <div class="answer-text">
+          תשובה: הגרף מדמה את המקדמים של הפונקציה x^m אחרי הגזירה ה־nית.
+        </div>
+        <img class="answer-image" src="images/lecture1-answer1.png" alt="תשובה לשאלה 1 הרצאה 1">
+      </div>
+    </div>
+  </section>
+
+  <!-- נושא 2 -->
+  <section class="lecture">
+    <h2>נושא 2 - האינטגרל הלא מסוים</h2>
+
+    <div class="question-card">
+      <h3>שאלה 1</h3>
+
+      <div class="question-text">
+        איזה רעיון מרכזי מודגם בתמונה?
+      </div>
+
+      <img src="images/lecture2-question1.jpeg" alt="שאלה 1 הרצאה 2">
+
+      <div class="buttons">
+        <button class="hint-btn" onclick="toggleBox('hint-l2-q1')">הצג רמז</button>
+        <button class="answer-btn" onclick="toggleBox('answer-l2-q1')">הצג תשובה</button>
+      </div>
+
+      <div id="hint-l2-q1" class="hint">
+        רמז: פרק 4 (שיטות אינטגרציה - ארגז כלים).
+      </div>
+
+      <div id="answer-l2-q1" class="answer">
+        <div class="answer-text">
+          תשובה: תיקון קבועים מיידי.
+        </div>
+        <img class="answer-image" src="images/lecture2-answer1.png" alt="תשובה לשאלה 1 הרצאה 2">
+      </div>
+    </div>
+
+    <div class="question-card">
+      <h3>שאלה 2</h3>
+
+      <div class="question-text">
+        למה התמונה מתקשרת, ומה חסר בה?
+      </div>
+
+      <img src="images/lecture2-question2.jpeg" alt="שאלה 2 הרצאה 2">
+
+      <div class="buttons">
+        <button class="hint-btn" onclick="toggleBox('hint-l2-q2')">הצג רמז</button>
+        <button class="answer-btn" onclick="toggleBox('answer-l2-q2')">הצג תשובה</button>
+      </div>
+
+      <div id="hint-l2-q2" class="hint">
+        רמז: בתמונה רואים נייר גזור חלקי נייר. לאיזה משפט זה מתקשר?
+      </div>
+
+      <div id="answer-l2-q2" class="answer">
+        <div class="answer-text">
+          תשובה: הזהות 
+          <span dir="ltr">∫f'(x)dx/f(x) = log|f(x)|</span>
+          , וחסר +c.
+        </div>
+        <img class="answer-image" src="images/lecture2-answer2.png" alt="תשובה לשאלה 2 הרצאה 2">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleBox(id) {
+      const el = document.getElementById(id);
+      if (el.style.display === "block") {
+        el.style.display = "none";
+      } else {
+        el.style.display = "block";
+      }
+    }
+  </script>
+  <footer style="
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 14px;
+  ">
+    נבנה ע"י אביחי גורפינקל | כל הזכויות שמורות © 2026
+  </footer>
+</body>
+</html>
