@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>שאלות לפי הרצאה</title>
+  <title>חידות אינפי2</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -40,10 +40,12 @@
       font-weight: bold;
       margin-bottom: 12px;
       color: #333;
+      line-height: 1.6;
     }
 
     .question-card img,
-    .answer-image {
+    .answer-image,
+    .header-image {
       width: 100%;
       max-width: 500px;
       height: auto;
@@ -80,6 +82,7 @@
       margin-top: 10px;
       padding: 10px;
       border-radius: 8px;
+      line-height: 1.7;
     }
 
     .hint {
@@ -92,6 +95,39 @@
 
     .answer-text {
       margin-bottom: 10px;
+      line-height: 1.7;
+    }
+
+    .site-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .credit {
+      font-size: 16px;
+      color: #7c7575;
+    }
+
+    .empty-state {
+      background: white;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
@@ -115,351 +151,523 @@
   </style>
 </head>
 <body>
-  <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <div class="site-header">
     <h1>מאגר שאלות לפי נושאים</h1>
-    <div class="question-text">
-      תזכורת:
-    </div>
-    <img src="images/main.jpeg" alt="log=ln" width="300">
-    <p style="font-size: 16px; color: #7c7575;">
-      קרדיט תמונה: בועז צבאן
-    </p>
-    <div class="question-text">
-      log=ln!!!
-    </div>
+    
+      <div class="question-text">תזכורת:</div>
+    
+
+    
+      <img class="header-image" src="images/main.jpeg" alt="log=ln" width="300">
+    
+
+    
+      <p class="credit">קרדיט תמונה: בועז צבאן</p>
+    
+
+    
+      <div class="question-text">!!!log=ln</div>
+    
   </div>
 
-  <!-- נושא 1 -->
-  <section class="lecture">
-    <h2>נושא 1 - קירוב פונקציות לפולינומים</h2>
+  
+    
+      <section class="lecture">
+        
+        
+          
+        
+        <h2>נושא 1 - קירוב פונקציות לפולינומים</h2>
 
-    <div class="question-card">
-      <h3>שאלה 1</h3>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 1</h3>
 
-      <div class="question-text">
-        מה מייצג הגרף שבתמונה?
-      </div>
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: אביחי גורפינקל
-      </p>
-      <img src="images/lecture1-question1.jpeg" alt="שאלה 1 נושא 1">
+            
+              <div class="question-text">מה מייצג הגרף שבתמונה?</div>
+            
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l1-q1')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l1-q1')">הצג תשובה</button>
-      </div>
+            
+              <p class="credit">קרדיט: אביחי גורפינקל</p>
+            
 
-      <div id="hint-l1-q1" class="hint">
-        רמז: מה קורה כשגוזרים פולינום שוב ושוב?
-      </div>
+            
+              <img src="images/lecture1-question1.jpeg" alt="שאלה 1 נושא 1">
+            
 
-      <div id="answer-l1-q1" class="answer">
-        <div class="answer-text">
-          תשובה: הגרף מדמה את המקדמים של הפונקציה x^m אחרי הגזירה ה־nית.
-        </div>
-        <img class="answer-image" src="images/lecture1-answer1.png" alt="תשובה לשאלה 1 נושא 1">
-      </div>
-    </div>
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-1-topic-1-question-1')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-1-topic-1-question-1')">הצג תשובה</button>
+              
+            </div>
 
-    <div class="question-card">
-      <h3>שאלה 2</h3>
+            
+              <div id="hint-topic-1-topic-1-question-1" class="hint">רמז: מה קורה כשגוזרים פולינום שוב ושוב?</div>
+            
 
-      <div class="question-text">
-        מה מייצגת התמונה?
-      </div>
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: בועז צבאן
-      </p>
-      <img src="images/lecture1-question2.jpeg" alt="שאלה 2 נושא 1">
+            
+              <div id="answer-topic-1-topic-1-question-1" class="answer">
+                
+                  <div class="answer-text">תשובה: הגרף מדמה את המקדמים של הפונקציה x^m אחרי הגזירה ה־nית.</div>
+                
+                
+                  <img class="answer-image" src="images/lecture1-answer1.png" alt="תשובה לשאלה 1 נושא 1">
+                
+              </div>
+            
+          </div>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 2</h3>
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l1-q2')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l1-q2')">הצג תשובה</button>
-      </div>
+            
+              <div class="question-text">מה מייצגת התמונה?</div>
+            
 
-      <div id="hint-l1-q2" class="hint">
-        רמז: איזו פונקציה היא לא רק מחזורית, אלא גם כשגוזרים אותה היא מחזורית?
-      </div>
+            
+              <p class="credit">קרדיט: בועז צבאן</p>
+            
 
-      <div id="answer-l1-q2" class="answer">
-        <div class="answer-text">
-          תשובה: משפחת הפונקציות sin,cos,-sin,-cos
-        </div>
-        <img class="answer-image" src="images/lecture1-answer2.png" alt="תשובה לשאלה 2 נושא 1">
-      </div>
-    </div>
+            
+              <img src="images/lecture1-question2.jpeg" alt="שאלה 2 נושא 1">
+            
 
-    <div class="question-card">
-      <h3>שאלה 3</h3>
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-1-topic-1-question-2')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-1-topic-1-question-2')">הצג תשובה</button>
+              
+            </div>
 
-      <div class="question-text">
-        מה מייצגים כדורי השלג?
-      </div>
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: בועז צבאן
-      </p>
-      <img src="images/lecture1-question3.jpeg" alt="שאלה 3 נושא 1">
+            
+              <div id="hint-topic-1-topic-1-question-2" class="hint">רמז: איזו פונקציה היא לא רק מחזורית, אלא גם כשגוזרים אותה היא מחזורית?</div>
+            
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l1-q3')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l1-q3')">הצג תשובה</button>
-      </div>
+            
+              <div id="answer-topic-1-topic-1-question-2" class="answer">
+                
+                  <div class="answer-text">תשובה: משפחת הפונקציות sin,cos,-sin,-cos</div>
+                
+                
+                  <img class="answer-image" src="images/lecture1-answer2.png" alt="תשובה לשאלה 2 נושא 1">
+                
+              </div>
+            
+          </div>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 3</h3>
 
-      <div id="hint-l1-q3" class="hint">
-        רמז: אלה האיברים בפולינום טיילור, מהצורה
+            
+              <div class="question-text">מה מייצגים כדורי השלג?</div>
+            
+
+            
+              <p class="credit">קרדיט: בועז צבאן</p>
+            
+
+            
+              <img src="images/lecture1-question3.jpeg" alt="שאלה 3 נושא 1">
+            
+
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-1-topic-1-question-3')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-1-topic-1-question-3')">הצג תשובה</button>
+              
+            </div>
+
+            
+              <div id="hint-topic-1-topic-1-question-3" class="hint">רמז: אלה האיברים בפולינום טיילור, מהצורה
         <span dir="ltr">f^(k)(a)(x-a)^k/k!</span>
-        . למה הם קטנים?
-      </div>
+        . למה הם קטנים?</div>
+            
 
-      <div id="answer-l1-q3" class="answer">
-        <div class="answer-text">
-          תשובה: אלה המקדמים של פולינום טיילור. כאשר איקס מתקרב לנקודה מאד, התרומה של המונומים הראשונים גדולה יותר משל המונומים שמופיעים לאחר מכן (בהנחה שהם לא 0).
-        </div>
-        <img class="answer-image" src="images/lecture1-answer3.png" alt="תשובה לשאלה 3 נושא 1">
-      </div>
-    </div>
-  </section>
+            
+              <div id="answer-topic-1-topic-1-question-3" class="answer">
+                
+                  <div class="answer-text">תשובה: אלה המקדמים של פולינום טיילור. כאשר איקס מתקרב לנקודה מאד, התרומה של המונומים הראשונים גדולה יותר משל המונומים שמופיעים לאחר מכן (בהנחה שהם לא 0).</div>
+                
+                
+                  <img class="answer-image" src="images/lecture1-answer3.png" alt="תשובה לשאלה 3 נושא 1">
+                
+              </div>
+            
+          </div>
+        
+      </section>
+    
+      <section class="lecture">
+        
+        
+          
+        
+        <h2>נושא 2 - האינטגרל הלא מסוים</h2>
 
-  <!-- נושא 2 -->
-  <section class="lecture">
-    <h2>נושא 2 - האינטגרל הלא מסוים</h2>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 1</h3>
 
-    <div class="question-card">
-      <h3>שאלה 1</h3>
+            
+              <div class="question-text">איזה רעיון מרכזי מודגם בתמונה?</div>
+            
 
-      <div class="question-text">
-        איזה רעיון מרכזי מודגם בתמונה?
-      </div>
+            
+              <p class="credit">קרדיט: אביחי גורפינקל</p>
+            
 
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: אביחי גורפינקל
-      </p>
+            
+              <img src="images/lecture2-question1.jpeg" alt="שאלה 1 נושא 2">
+            
 
-      <img src="images/lecture2-question1.jpeg" alt="שאלה 1 נושא 2">
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-2-topic-2-question-1')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-2-topic-2-question-1')">הצג תשובה</button>
+              
+            </div>
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l2-q1')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l2-q1')">הצג תשובה</button>
-      </div>
+            
+              <div id="hint-topic-2-topic-2-question-1" class="hint">רמז: פרק 4 (שיטות אינטגרציה - ארגז כלים).</div>
+            
 
-      <div id="hint-l2-q1" class="hint">
-        רמז: פרק 4 (שיטות אינטגרציה - ארגז כלים).
-      </div>
+            
+              <div id="answer-topic-2-topic-2-question-1" class="answer">
+                
+                  <div class="answer-text">תשובה: תיקון קבועים מיידי.</div>
+                
+                
+                  <img class="answer-image" src="images/lecture2-answer1.png" alt="תשובה לשאלה 1 נושא 2">
+                
+              </div>
+            
+          </div>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 2</h3>
 
-      <div id="answer-l2-q1" class="answer">
-        <div class="answer-text">
-          תשובה: תיקון קבועים מיידי.
-        </div>
-        <img class="answer-image" src="images/lecture2-answer1.png" alt="תשובה לשאלה 1 נושא 2">
-      </div>
-    </div>
+            
+              <div class="question-text">למה התמונה מתקשרת, ומה חסר בה?</div>
+            
 
-    <div class="question-card">
-      <h3>שאלה 2</h3>
+            
+              <p class="credit">קרדיט: אביחי גורפינקל</p>
+            
 
-      <div class="question-text">
-        למה התמונה מתקשרת, ומה חסר בה?
-      </div>
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: אביחי גורפינקל
-      </p>
-      <img src="images/lecture2-question2.jpeg" alt="שאלה 2 נושא 2">
+            
+              <img src="images/lecture2-question2.jpeg" alt="שאלה 2 נושא 2">
+            
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l2-q2')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l2-q2')">הצג תשובה</button>
-      </div>
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-2-topic-2-question-2')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-2-topic-2-question-2')">הצג תשובה</button>
+              
+            </div>
 
-      <div id="hint-l2-q2" class="hint">
-        רמז: בתמונה רואים נייר גזור חלקי נייר. לאיזה משפט זה מתקשר?
-      </div>
+            
+              <div id="hint-topic-2-topic-2-question-2" class="hint">רמז: בתמונה רואים נייר גזור חלקי נייר. לאיזה משפט זה מתקשר?</div>
+            
 
-      <div id="answer-l2-q2" class="answer">
-        <div class="answer-text">
-          תשובה: הזהות 
+            
+              <div id="answer-topic-2-topic-2-question-2" class="answer">
+                
+                  <div class="answer-text">תשובה: הזהות 
           <span dir="ltr">∫f'(x)dx/f(x) = log|f(x)|</span>
-          , וחסר +c.
-        </div>
-        <img class="answer-image" src="images/lecture2-answer2.png" alt="תשובה לשאלה 2 נושא 2">
-      </div>
-    </div>
+          , וחסר +c.</div>
+                
+                
+                  <img class="answer-image" src="images/lecture2-answer2.png" alt="תשובה לשאלה 2 נושא 2">
+                
+              </div>
+            
+          </div>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 3</h3>
 
-    <div class="question-card">
-      <h3>שאלה 3</h3>
+            
+              <div class="question-text">מאיזו פונקציה לומדים שלא צריך להשתנות בשביל אחרים?</div>
+            
 
-      <div class="question-text">
-        מאיזו פונקציה לומדים שלא צריך להשתנות בשביל אחרים?
-      </div>
+            
+              <p class="credit">קרדיט: יקיר חבה</p>
+            
 
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: יקיר חבה
-      </p>
+            
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l2-q3')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l2-q3')">הצג תשובה</button>
-      </div>
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-2-topic-2-question-3')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-2-topic-2-question-3')">הצג תשובה</button>
+              
+            </div>
 
-      <div id="hint-l2-q3" class="hint">
-        רמז: האינטגרל כמעט לא משפיע על הפונקציה..
-      </div>
+            
+              <div id="hint-topic-2-topic-2-question-3" class="hint">רמז: האינטגרל כמעט לא משפיע על הפונקציה..</div>
+            
 
-      <div id="answer-l2-q3" class="answer">
-        <div class="answer-text">
-          תשובה: הפונקציה e^x!
-        </div>
-        <img class="answer-image" src="images/lecture2-answer3.png" alt="תשובה לשאלה 3 נושא 2">
-      </div>
-    </div>
+            
+              <div id="answer-topic-2-topic-2-question-3" class="answer">
+                
+                  <div class="answer-text">תשובה: הפונקציה e^x!</div>
+                
+                
+                  <img class="answer-image" src="images/lecture2-answer3.png" alt="תשובה לשאלה 3 נושא 2">
+                
+              </div>
+            
+          </div>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 4</h3>
 
-   <div class="question-card">
-      <h3>שאלה 4</h3>
+            
+              <div class="question-text">איזה רעיון מרכזי מודגם בתמונה?</div>
+            
 
-      <div class="question-text">
-        איזה רעיון מרכזי מודגם בתמונה?
-      </div>
+            
+              <p class="credit">קרדיט: יקיר חבה</p>
+            
 
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: יקיר חבה
-      </p>
+            
+              <img src="images/lecture2-question4.jpeg" alt="שאלה 4 נושא 2">
+            
 
-      <img src="images/lecture2-question4.jpeg" alt="שאלה 4 נושא 2">
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-2-topic-2-question-4')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-2-topic-2-question-4')">הצג תשובה</button>
+              
+            </div>
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l2-q4')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l2-q4')">הצג תשובה</button>
-      </div>
+            
+              <div id="hint-topic-2-topic-2-question-4" class="hint">רמז: dg/dx.</div>
+            
 
-      <div id="hint-l2-q4" class="hint">
-        רמז: dg/dx.
-      </div>
+            
+              <div id="answer-topic-2-topic-2-question-4" class="answer">
+                
+                  <div class="answer-text">תשובה: אינטגרציה בחלקים.</div>
+                
+                
+                  <img class="answer-image" src="images/lecture2-answer4.png" alt="תשובה לשאלה 4 נושא 2">
+                
+              </div>
+            
+          </div>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 5</h3>
 
-      <div id="answer-l2-q4" class="answer">
-        <div class="answer-text">
-          תשובה: אינטגרציה בחלקים.
-        </div>
-        <img class="answer-image" src="images/lecture2-answer4.png" alt="תשובה לשאלה 4 נושא 2">
-      </div>
-    </div>
+            
+              <div class="question-text">איזה רעיון מרכזי מודגם בתמונה?</div>
+            
 
-   <div class="question-card">
-      <h3>שאלה 5</h3>
+            
+              <p class="credit">קרדיט: אביחי גורפינקל</p>
+            
 
-      <div class="question-text">
-        איזה רעיון מרכזי מודגם בתמונה?
-      </div>
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: אביחי גורפינקל
-      </p>
-      <img src="images/lecture2-question5.jpeg" alt="שאלה 5 נושא 2">
+            
+              <img src="images/lecture2-question5.jpeg" alt="שאלה 5 נושא 2">
+            
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l2-q5')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l2-q5')">הצג תשובה</button>
-      </div>
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-2-topic-2-question-5')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-2-topic-2-question-5')">הצג תשובה</button>
+              
+            </div>
 
-      <div id="hint-l2-q5" class="hint">
-        רמז: מה משותף לכל האנשים?
-      </div>
+            
+              <div id="hint-topic-2-topic-2-question-5" class="hint">רמז: מה משותף לכל האנשים?</div>
+            
 
-      <div id="answer-l2-q5" class="answer">
-        <div class="answer-text">
-          תשובה: משפחת הפונקציות הקדומות של f'(x).
-        </div>
-      </div>
-    </div>
-  </section>
+            
+              <div id="answer-topic-2-topic-2-question-5" class="answer">
+                
+                  <div class="answer-text">תשובה: משפחת הפונקציות הקדומות של f'(x).</div>
+                
+                
+              </div>
+            
+          </div>
+        
+      </section>
+    
+      <section class="lecture">
+        
+        
+          
+        
+        <h2>נושא 3 - חקירת פונקציות (בסיס)</h2>
 
-    <!-- נושא 3 -->
-  <section class="lecture">
-    <h2>נושא 3 - חקירת פונקציות (בסיס)</h2>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 1</h3>
 
-    <div class="question-card">
-      <h3>שאלה 1</h3>
+            
+              <div class="question-text">לאיזה משפט התמונה רומזת?</div>
+            
 
-      <div class="question-text">
-        לאיזה משפט התמונה רומזת?
-      </div>
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: אביחי גורפינקל
-      </p>
-      <img src="images/lecture3-question1.jpeg" alt="שאלה 1 נושא 3">
+            
+              <p class="credit">קרדיט: אביחי גורפינקל</p>
+            
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l3-q1')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l3-q1')">הצג תשובה</button>
-      </div>
+            
+              <img src="images/lecture3-question1.jpeg" alt="שאלה 1 נושא 3">
+            
 
-      <div id="hint-l3-q1" class="hint">
-        רמז: במה הנקודה חשודה?
-      </div>
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-3-topic-3-question-1')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-3-topic-3-question-1')">הצג תשובה</button>
+              
+            </div>
 
-      <div id="answer-l3-q1" class="answer">
-        <div class="answer-text">
-          תשובה: משפט פרמה.
-        </div>
-        <img class="answer-image" src="images/lecture3-answer1.png" alt="תשובה לשאלה 1 נושא 3">
-      </div>
-    </div>
+            
+              <div id="hint-topic-3-topic-3-question-1" class="hint">רמז: במה הנקודה חשודה?</div>
+            
 
-    <div class="question-card">
-      <h3>שאלה 2</h3>
+            
+              <div id="answer-topic-3-topic-3-question-1" class="answer">
+                
+                  <div class="answer-text">תשובה: משפט פרמה.</div>
+                
+                
+                  <img class="answer-image" src="images/lecture3-answer1.png" alt="תשובה לשאלה 1 נושא 3">
+                
+              </div>
+            
+          </div>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 2</h3>
 
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: יקיר חבה
-      </p>
+            
 
-      <img src="images/lecture3-question2.jpeg" alt="שאלה 2 נושא 3">
+            
+              <p class="credit">קרדיט: יקיר חבה</p>
+            
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l3-q2')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l3-q2')">הצג תשובה</button>
-      </div>
+            
+              <img src="images/lecture3-question2.jpeg" alt="שאלה 2 נושא 3">
+            
 
-      <div id="hint-l3-q2" class="hint">
-        רמז: מה הכי גבוה שאפשר?
-      </div>
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-3-topic-3-question-2')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-3-topic-3-question-2')">הצג תשובה</button>
+              
+            </div>
 
-      <div id="answer-l3-q2" class="answer">
-        <div class="answer-text">
-          תשובה: נקודת קיצון (מקסימום).
-        </div>
-        <img class="answer-image" src="images/lecture3-answer2.png" alt="תשובה לשאלה 2 נושא 3">
-      </div>
-    </div>
+            
+              <div id="hint-topic-3-topic-3-question-2" class="hint">רמז: מה הכי גבוה שאפשר?</div>
+            
 
-    <div class="question-card">
-      <h3>שאלה 3</h3>
-      <div class="question-text">
-        לאיזה מושג התמונה רומזת?
-      </div>
-      <p style="font-size: 16px; color: #7c7575;">
-        קרדיט: יקיר חבה ואביחי גורפינקל
-      </p>
+            
+              <div id="answer-topic-3-topic-3-question-2" class="answer">
+                
+                  <div class="answer-text">תשובה: נקודת קיצון (מקסימום).</div>
+                
+                
+                  <img class="answer-image" src="images/lecture3-answer2.png" alt="תשובה לשאלה 2 נושא 3">
+                
+              </div>
+            
+          </div>
+        
+          
+          
+          <div class="question-card">
+            <h3>שאלה 3</h3>
 
-      <img src="images/lecture3-question3.jpeg" alt="שאלה 3 נושא 3">
+            
+              <div class="question-text">לאיזה מושג התמונה רומזת?</div>
+            
 
-      <div class="buttons">
-        <button class="hint-btn" onclick="toggleBox('hint-l3-q3')">הצג רמז</button>
-        <button class="answer-btn" onclick="toggleBox('answer-l3-q3')">הצג תשובה</button>
-      </div>
+            
+              <p class="credit">קרדיט: יקיר חבה ואביחי גורפינקל</p>
+            
 
-      <div id="hint-l3-q3" class="hint">
-        רמז: איזה גרף זה? מה יש במרכזו?
-      </div>
+            
+              <img src="images/lecture3-question3.jpeg" alt="שאלה 3 נושא 3">
+            
 
-      <div id="answer-l3-q3" class="answer">
-        <div class="answer-text">
-          תשובה: נקודת פיתול
-        </div>
-        <img class="answer-image" src="images/lecture3-answer3.png" alt="תשובה לשאלה 3 נושא 3">
-      </div>
-    </div>
-  </section>
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-topic-3-topic-3-question-3')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-topic-3-topic-3-question-3')">הצג תשובה</button>
+              
+            </div>
+
+            
+              <div id="hint-topic-3-topic-3-question-3" class="hint">רמז: איזה גרף זה? מה יש במרכזו?</div>
+            
+
+            
+              <div id="answer-topic-3-topic-3-question-3" class="answer">
+                
+                  <div class="answer-text">תשובה: נקודת פיתול</div>
+                
+                
+                  <img class="answer-image" src="images/lecture3-answer3.png" alt="תשובה לשאלה 3 נושא 3">
+                
+              </div>
+            
+          </div>
+        
+      </section>
+    
+  
 
   <script>
     function toggleBox(id) {
       const el = document.getElementById(id);
+      if (!el) return;
       if (el.style.display === "block") {
         el.style.display = "none";
       } else {
@@ -467,15 +675,9 @@
       }
     }
   </script>
-  <footer style="
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 15px;
-    border-top: 1px solid #ddd;
-    color: #666;
-    font-size: 14px;
-  ">
-    נבנה ע"י אביחי גורפינקל | כל הזכויות שמורות © 2026
-  </footer>
+
+  
+    <footer>נבנה ע"י אביחי גורפינקל | כל הזכויות שמורות © 2026</footer>
+  
 </body>
 </html>
