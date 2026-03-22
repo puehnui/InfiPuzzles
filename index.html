@@ -701,4 +701,47 @@
               
             </div>
 
-       
+            
+              <div id="hint-l3-q3" class="hint">רמז: איזה גרף זה? מה יש במרכזו?</div>
+            
+
+            
+              <div id="answer-l3-q3" class="answer">
+                
+                  <div class="answer-text">תשובה: נקודת פיתול</div>
+                
+                
+                  <img class="answer-image" src="images/lecture3-answer3.png" alt="תשובה לשאלה 3 נושא 3">
+                
+              </div>
+            
+          </div>
+        
+      </section>
+    
+  
+
+  <script>
+  function toggleBox(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.style.display = el.style.display === "block" ? "none" : "block";
+  }
+
+  // open from URL
+  window.onload = function () {
+    const hash = window.location.hash; // "#l1-q1"
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+  </script>
+
+  
+    <footer>נבנה ע"י אביחי גורפינקל | כל הזכויות שמורות © 2026</footer>
+  
+</body>
+</html>
