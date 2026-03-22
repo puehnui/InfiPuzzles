@@ -536,6 +536,49 @@
             
           </div>
         
+          
+          
+          
+          <div class="question-card" id="l2-q6">
+            <h3>שאלה 6</h3>
+
+            
+              <div class="question-text">איזו שיטת אינטגרציה מתוארת בתמונה?</div>
+            
+
+            
+              <p class="credit">קרדיט: אביחי גורפינקל</p>
+            
+
+            
+              <img src="images/a38255fe-ebbb-4fc1-a237-2fcefe58d88e.jpeg" alt="">
+            
+
+            <div class="buttons">
+              
+                <button class="hint-btn" onclick="toggleBox('hint-l2-q6')">הצג רמז</button>
+              
+              
+                <button class="answer-btn" onclick="toggleBox('answer-l2-q6')">הצג תשובה</button>
+              
+            </div>
+
+            
+              <div id="hint-l2-q6" class="hint">רמז: מה ההפך של כלל השרשרת? מה ההפך של השיטה הזאת?</div>
+            
+
+            
+              <div id="answer-l2-q6" class="answer">
+                
+                  <div class="answer-text">תשובה: הצבה הפוכה</div>
+                
+                
+                  <img class="answer-image" src="images/Screenshot_1.png" alt="">
+                
+              </div>
+            
+          </div>
+        
       </section>
     
       
@@ -658,47 +701,4 @@
               
             </div>
 
-            
-              <div id="hint-l3-q3" class="hint">רמז: איזה גרף זה? מה יש במרכזו?</div>
-            
-
-            
-              <div id="answer-l3-q3" class="answer">
-                
-                  <div class="answer-text">תשובה: נקודת פיתול</div>
-                
-                
-                  <img class="answer-image" src="images/lecture3-answer3.png" alt="תשובה לשאלה 3 נושא 3">
-                
-              </div>
-            
-          </div>
-        
-      </section>
-    
-  
-
-  <script>
-  function toggleBox(id) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.style.display = el.style.display === "block" ? "none" : "block";
-  }
-
-  // open from URL
-  window.onload = function () {
-    const hash = window.location.hash; // "#l1-q1"
-    if (hash) {
-      const el = document.querySelector(hash);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
-  </script>
-
-  
-    <footer>נבנה ע"י אביחי גורפינקל | כל הזכויות שמורות © 2026</footer>
-  
-</body>
-</html>
+       
